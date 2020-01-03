@@ -259,7 +259,7 @@ public class Options {
         ArrayList<String> ListOfAllTags = new ArrayList<>();
         for(WordElement word:mWordElement) {
             for(String tag:word.tags){
-                tag= tag.replaceAll(" ","");
+                //tag= tag.replaceAll(" ","");
                 if (!ListOfAllTags.contains(tag))
                     ListOfAllTags.add(tag);
             }

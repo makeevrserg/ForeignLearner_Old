@@ -178,6 +178,7 @@ public class ActivityImportExport extends AppCompatActivity {
                     contentValues.put(DBHelper.KEY_TRANSCRIPTION, transcription);
                     contentValues.put(DBHelper.KEY_TRANSLATION, translation);
                     contentValues.put(DBHelper.KEY_TAGS, tags);
+                    //Log.d(TAG, "run: "+tags);
                     contentValues.put(DBHelper.KEY_PROGRESS, progress.substring(0, progress.length() - 1));
                     database.insert(TABLE, null, contentValues);
                     try {
@@ -293,7 +294,7 @@ public class ActivityImportExport extends AppCompatActivity {
 
     }
 
-    public final static String TAG="FragmentSettings";
+    public final static String TAG="ActivityImportExport";
 
     private List<String> GetReadableFiles(){
         File folder = new File(Environment.getExternalStorageDirectory()+"/LearnJapanese");

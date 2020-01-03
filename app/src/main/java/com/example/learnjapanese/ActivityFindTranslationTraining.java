@@ -89,9 +89,25 @@ public class ActivityFindTranslationTraining extends AppCompatActivity {
         buttonAnswer[2] = findViewById(R.id.buttonAnswer3);
         buttonAnswer[3] = findViewById(R.id.buttonAnswer4);
 
+        for (int i = 0; i < 4; ++i) {
+            final int finalI = i;
+            buttonAnswer[i].setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View view) {
+                    new androidx.appcompat.app.AlertDialog.Builder(ActivityFindTranslationTraining.this)
+                            .setTitle("Выбранное слово")
+                            .setMessage(buttonAnswer[finalI].getText())
+                            .create().show();
+                    return false;
+                }
+            });
+        }
+
+
         if (TRAINING_TYPE == 1)
-            for (int i = 0; i < 4; ++i)
+            for (int i = 0; i < 4; ++i) {
                 buttonAnswer[i].setTextSize(20);
+            }
         textViewWord = findViewById(R.id.textViewWord);
         textToSpeech = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
             @Override

@@ -330,6 +330,7 @@ public class ActivityMatchWords extends AppCompatActivity{
         btn.setLayoutParams(params);
         btn.setTextColor(buttonTextColor);
         btn.setLines(2);
+        btn.setAllCaps(false);
         btn.setEllipsize(TextUtils.TruncateAt.MARQUEE);
         btn.setMarqueeRepeatLimit(-1);
         btn.setSelected(true);

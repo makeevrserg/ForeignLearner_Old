@@ -144,13 +144,18 @@ public class LearningWordListItemAdapter extends RecyclerView.Adapter<LearningWo
             mTranslation.clear();
             mTags.clear();
             mProgressBars.clear();
-            for (WordElement word:filteredWords){
-                mWord.add(word.word);
-                mTranscription.add(word.transcription);
-                mTranslation.add(word.translation);
-                mTags.add(word.tags);
-                mProgressBars.add(word.progressBar);
+            try {
+                for (WordElement word:filteredWords){
+                    mWord.add(word.word);
+                    mTranscription.add(word.transcription);
+                    mTranslation.add(word.translation);
+                    mTags.add(word.tags);
+                    mProgressBars.add(word.progressBar);
+                }
+            }catch (Exception e){
+
             }
+
             notifyDataSetChanged();
         }
     };
