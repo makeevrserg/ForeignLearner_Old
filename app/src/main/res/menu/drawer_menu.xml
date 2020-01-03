@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_login"
+            android:iconTint="?attr/icontint"
+
+            android:title="Log in"
+            app:showAsAction="always"/>
+        <item
+            android:id="@+id/nav_startlearning_japanese"
+            android:icon="@drawable/ic_startlearning"
+            android:iconTint="?attr/icontint"
+            android:title="Japanese"
+            app:showAsAction="always"/>
+        <item
+            android:id="@+id/nav_startlearning_english"
+            android:icon="@drawable/ic_startlearning"
+            android:iconTint="?attr/icontint"
+            android:title="English"
+            app:showAsAction="always"/>
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_contacts"
+            android:iconTint="?attr/icontint"
+            android:title="Contacts" />
+        <item
+            android:id="@+id/nav_statistic"
+            android:iconTint="?attr/icontint"
+            android:icon="@drawable/ic_statistic"
+            android:title="Statistic" />
+        <item
+            android:id="@+id/nav_settings"
+            android:iconTint="?attr/icontint"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings"
+            app:showAsAction="ifRoom"/>
+
+    </group>
+
+
+</menu>

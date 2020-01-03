@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor">
+
+    <Button
+        android:background="?attr/cardbackground"
+        android:textColor="?attr/buttontextcolor"
+        android:id="@+id/buttonImportExport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\tИмпорт и экспорт файлов"
+        android:textAlignment="textStart"
+        android:layout_marginHorizontal="5sp"/>
+
+    <RelativeLayout
+
+        android:id="@+id/relativeLayoutSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonImportExport"
+        android:background="?attr/cardbackground"
+        android:layout_margin="5sp"
+        android:padding="5sp">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/textcolor"
+            android:textSize="17sp"
+            android:text="\tТема интерфейса"/>
+        <Spinner
+            android:id="@+id/spinnerThemes"
+            android:layout_toRightOf="@id/textView"
+            android:layout_width="match_parent"
+            android:entries="@array/themes_entries"
+            android:textAlignment="textEnd"
+            android:textColor="?attr/textcolor"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <Button
+        android:background="?attr/cardbackground"
+        android:textColor="?attr/buttontextcolor"
+        android:id="@+id/buttonSyncServer"
+        android:layout_width="match_parent"
+        android:layout_below="@id/relativeLayoutSettings"
+        android:layout_height="wrap_content"
+        android:text="\tСинхронизация с сервером"
+        android:textAlignment="textStart"
+        android:layout_marginHorizontal="5sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor">
+
+    <Button
+        android:background="?attr/buttoncolor"
+        android:textColor="?attr/buttontextcolor"
+        android:id="@+id/buttonImportJson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/spinnerJsonFiles"
+        android:layout_alignBottom="@id/spinnerJsonFiles"
+        android:text="ImportFile"
+        android:textAlignment="textStart"
+        android:layout_marginHorizontal="5sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Spinner
+        android:backgroundTint="?attr/tintcolor"
+        android:tooltipText="Выберите"
+        android:textAlignment="textEnd"
+        android:minHeight="50sp"
+        android:id="@+id/spinnerJsonFiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

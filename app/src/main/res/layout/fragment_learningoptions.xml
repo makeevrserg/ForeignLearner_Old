@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor">
+
+
+    <Switch
+        android:background="@drawable/card_round"
+        android:buttonTint="?attr/tintcolor"
+        android:layout_marginHorizontal="5sp"
+        android:id="@+id/switchInfRepeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"
+        android:textColor="?attr/textcolor"
+        android:text="Бесконечный повтор" />
+    <Switch
+        android:layout_marginHorizontal="5sp"
+        android:background="@drawable/card_round"
+        android:buttonTint="?attr/tintcolor"
+        android:layout_marginTop="5sp"
+        android:id="@+id/switchLearnedShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textColor="?attr/textcolor"
+        android:layout_below="@id/switchInfRepeat"
+        android:textSize="20sp"
+        android:text="Показывать выученные слова"
+        />
+
+    <RelativeLayout
+        android:layout_margin="5sp"
+        android:id="@+id/relativeLayoutFirstToShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switchLearnedShow"
+        android:background="@drawable/card_round">
+    <TextView
+        android:id="@+id/textViewFirstToShow"
+        android:textColor="?attr/textcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:minHeight="50sp"
+        android:text="Количество слов за раз:" />
+
+    <NumberPicker
+        android:id="@+id/numberPickerOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/textViewFirstToShow"
+        android:layout_alignBottom="@id/textViewFirstToShow"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayoutFirstToShow"
+        android:background="@drawable/card_round"
+        android:layout_marginHorizontal="5sp"
+        android:id="@+id/relativeLayoutRecyclerView">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="5sp"
+            android:minHeight="30dp"
+            android:id="@+id/recyclerViewTagsSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/imageButtonTagSelect"
+            android:layout_marginBottom="60sp"
+            android:layout_alignParentStart="true"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:layout_alignTop="@id/recyclerViewTagsSelected"
+            android:layout_alignBottom="@id/recyclerViewTagsSelected"
+            android:background="?attr/cardbackground"
+            android:textColor="?attr/buttontextcolor"
+            android:layout_marginTop="5sp"
+            android:id="@+id/imageButtonTagSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+    </RelativeLayout>
+
+
+    <TextView
+
+        android:textColor="?attr/textcolor"
+        android:layout_marginTop="5sp"
+        android:id="@+id/textViewWordCountSelected"
+        android:layout_marginHorizontal="5sp"
+        android:background="@drawable/card_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayoutRecyclerView"
+        android:textSize="20sp"
+        android:text="Выбрано слов:0" />
+</RelativeLayout>

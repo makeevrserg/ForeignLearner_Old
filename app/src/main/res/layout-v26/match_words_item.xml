@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/relativeLayoutMatchWords"
+    android:layout_height="wrap_content"
+    android:padding="5sp"
+    android:layout_margin="5sp"
+    android:background="?attr/cardbackground">
+
+
+    <TextView
+        android:textColor="?attr/textcolor"
+        android:id="@+id/textViewWordName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Слово"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:textColor="?attr/textcolor"
+        android:id="@+id/textViewWordTranscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textAlignment="center"
+        android:scrollHorizontally="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewWordName"
+        android:text="[Слово]"
+        android:textSize="15sp" />
+
+</RelativeLayout>

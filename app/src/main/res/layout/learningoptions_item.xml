@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayout"
+    android:padding="5dp"
+    android:layout_marginVertical="10dp"
+    android:background="@drawable/card_round">
+
+
+    <ImageView
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        tools:srcCompat="@tools:sample/avatars[3]"
+        />
+    <TextView
+        android:textColor="?attr/textcolor"
+        android:id="@+id/textViewOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginStart="10dp"
+        android:text="Выбранный элемент"
+        />
+
+    <TextView
+        android:textColor="?attr/textcolor"
+        android:id="@+id/textViewWordCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_below="@id/textViewOption"
+        android:text="Выучено слов"
+        />
+</RelativeLayout>

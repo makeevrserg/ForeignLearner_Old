@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search_words"
+        android:title="Поиск"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:iconTint="?attr/icontint"
+        android:icon="@drawable/ic_search"/>
+    <item
+        android:id="@+id/action_startlearning"
+        android:icon="@drawable/ic_startlearning"
+        android:title="Learn words"
+        android:iconTint="?attr/icontint"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_server_words"
+        android:iconTint="?attr/icontint"
+        android:title="Посмотреть слова сервера"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_people_words"
+        android:iconTint="?attr/icontint"
+        android:title="Посмотреть слова людей"
+        app:showAsAction="never"/>
+</menu>

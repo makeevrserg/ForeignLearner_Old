@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor">
+
+
+    <RelativeLayout
+        android:background="?attr/cardbackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:id="@+id/relativeLayoutImportWords"
+        android:layout_margin="5sp">
+        <TextView
+            android:id="@+id/textViewImportWords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/textcolor"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:textAlignment="center"
+            android:text="Ипорт слов из файла"/>
+        <Spinner
+            android:id="@+id/spinnerJsonFiles"
+            android:backgroundTint="?attr/tintcolor"
+            android:tooltipText="Выберите"
+            android:layout_toRightOf="@id/textViewImportWords"
+            android:textAlignment="textEnd"
+            android:minHeight="50sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <Button
+        android:layout_below="@id/relativeLayoutImportWords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\tЭкспорт слов"
+        android:textAlignment="textStart"
+        android:textColor="?attr/textcolor"
+        android:background="?attr/cardbackground"
+        android:layout_marginHorizontal="5sp"/>
+
+
+
+
+
+</RelativeLayout>

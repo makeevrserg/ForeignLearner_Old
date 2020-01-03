@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/startLearning"
+    android:iconTint="?attr/icontint"
+    android:icon="@drawable/ic_home"
+    android:title="Выбрать тренировку"/>
+    <item
+        android:id="@+id/learningSettings"
+        android:icon="@drawable/ic_settings"
+        android:iconTint="?attr/icontint"
+        android:title="Настройки"/>
+</menu>

@@ -1,0 +1,8 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="themes_entries">
+        <item>Standart</item>
+        <item>Dark</item>
+        <item>Sunset</item>
+    </string-array>
+</resources>

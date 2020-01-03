@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5sp">
+        <EditText
+            android:textColorHint="?attr/hintcolor"
+            android:textColor="?attr/textcolor"
+            android:layout_marginTop="5sp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30sp"
+            android:id="@+id/editTextName"
+            android:hint="Ваше имя" />
+
+        <EditText
+            android:textColorHint="?attr/hintcolor"
+            android:textColor="?attr/textcolor"
+            android:layout_marginTop="5sp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30sp"
+            android:layout_below="@id/editTextName"
+            android:id="@+id/editTextLastName"
+            android:hint="Ваша фамилия" />
+
+
+        <EditText
+            android:textColorHint="?attr/hintcolor"
+            android:textColor="?attr/textcolor"
+            android:layout_marginTop="5sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30sp"
+            android:id="@+id/editTextRegEmail"
+            android:hint="E-mail" />
+
+
+        <EditText
+            android:textColorHint="?attr/hintcolor"
+            android:textColor="?attr/textcolor"
+            android:layout_marginTop="5sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/editTextRegPassword"
+            android:layout_below="@id/editTextRegEmail"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="30sp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Введите пароль"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:textColorHint="?attr/hintcolor"
+            android:textColor="?attr/textcolor"
+            android:layout_marginTop="5sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/editTextRegRepeatPassword"
+            android:layout_below="@id/editTextRegPassword"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="30sp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Введите пароль"
+            android:inputType="textPassword" />
+
+
+
+
+
+        <Button
+            android:background="@drawable/buttton_round"
+            android:textColor="?attr/buttontextcolor"
+            android:id="@+id/buttonAutorize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Зарегистрироваться"
+            android:layout_below="@id/buttonBirthSelect"
+            android:layout_marginHorizontal="30sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5sp"
+            android:onClick="onClickFinishRegistration"/>
+
+
+
+        <TextView
+            android:textColor="?attr/textcolor"
+            android:layout_marginTop="5sp"
+            android:id="@+id/textViewGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextRegRepeatPassword"
+            android:layout_alignLeft="@id/editTextRegRepeatPassword"
+            android:layout_alignRight="@id/editTextRegRepeatPassword"
+            android:text="Выберите пол"/>
+
+        <TextView
+            android:textColor="?attr/textcolor"
+            android:layout_marginTop="5sp"
+            android:id="@+id/textViewBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioGroup"
+            android:layout_alignLeft="@id/editTextRegRepeatPassword"
+            android:layout_alignRight="@id/editTextRegRepeatPassword"
+            android:text="Введите дату рождения"/>
+
+
+
+
+            <Button
+                android:background="@drawable/buttton_round"
+                android:textColor="?attr/buttontextcolor"
+                android:layout_marginTop="5sp"
+                android:id="@+id/buttonBirthSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewBirth"
+                android:text="Дата рождения:01/01/2001"
+                android:textSize="15sp"
+                android:layout_alignLeft="@id/editTextRegRepeatPassword"
+                android:layout_alignRight="@id/editTextRegRepeatPassword"
+                android:onClick="ChooseBirthOnClick"/>
+
+
+
+        <RadioGroup
+            android:layout_marginTop="5sp"
+            android:id="@+id/radioGroup"
+            android:layout_below="@id/textViewGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/editTextRegRepeatPassword"
+            android:layout_alignRight="@id/editTextRegRepeatPassword">
+
+            <RadioButton
+                android:buttonTint="?attr/tintcolor"
+                android:textColor="?attr/textcolor"
+                android:id="@+id/radioButtonMale"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Мужской" />
+
+            <RadioButton
+                android:buttonTint="?attr/tintcolor"
+                android:textColor="?attr/textcolor"
+                android:id="@+id/radioButtonFemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Женский" />
+
+        </RadioGroup>
+    </RelativeLayout>
+</RelativeLayout>

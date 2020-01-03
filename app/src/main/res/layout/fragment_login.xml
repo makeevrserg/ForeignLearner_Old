@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor">
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true">
+    <Button
+        android:background="@drawable/buttton_round"
+        android:textColor="?attr/buttontextcolor"
+        android:id="@+id/buttonAutorize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginHorizontal="30sp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAutorize"
+        android:textColor="#1A7EAC"
+        android:layout_alignRight="@id/buttonAutorize"
+        android:layout_alignLeft="@id/buttonAutorize"
+        android:layout_marginTop="20sp"
+        android:textSize="15sp"
+        android:text="Нет аккаунта?"/>
+
+
+    <EditText
+        android:textColorHint="?attr/hintcolor"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30sp"
+        android:id="@+id/editTextLogin"
+            android:hint="Введите логин" />
+
+    <EditText
+        android:textColorHint="?attr/hintcolor"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editTextPassword"
+        android:layout_below="@id/editTextLogin"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Введите пароль"
+        android:inputType="textPassword" />
+</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1094743252610",
+    "firebase_url": "https://foreignlearner-1ee78.firebaseio.com",
+    "project_id": "foreignlearner-1ee78",
+    "storage_bucket": "foreignlearner-1ee78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094743252610:android:7c6b516e73f97dd9a41e9b",
+        "android_client_info": {
+          "package_name": "com.example.learnjapanese"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094743252610-7h0265cbgedbfv1vme6n55f7aq3vqqa7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.learnjapanese",
+            "certificate_hash": "d6d1f94537e5eafbd424534e0b7b3c6db2a13839"
+          }
+        },
+        {
+          "client_id": "1094743252610-5jdsavlata186dk2sf6eqkf0uq5edpth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE3AyQGc0dO_yio7CIo4or41k3UG6kqos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1094743252610-5jdsavlata186dk2sf6eqkf0uq5edpth.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

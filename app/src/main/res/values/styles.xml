@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+
+    <style name="AppTheme.Red">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <item name="colorPrimary">#86621A</item>
+
+        <item name="colorPrimaryDark">#563838</item>
+        <item name="backgroundcolor">#563838</item>
+
+        <item name="colorAccent">#6A8A82</item>
+
+        <item name="colorControlNormal">#ff282726</item>
+        <item name="tintcolor">#ff282726</item>
+        <item name="icontint">#ff282726</item>
+
+        <item name="windowActionBarOverlay">true</item>
+
+        <item name="cardbackground">#A37C27</item>
+        <item name="textcolor">#FFF</item>
+        <item name="textcolortag">#BCFF8C4F</item>
+        <item name="hintcolor">#757575</item>
+
+
+        <item name="buttoncolor">#A7414A</item>
+        <item name="buttontextcolor">#FFF</item>
+
+        <item name="buttoncolorselected">#ff7315</item>
+        <item name="buttoncolorcorrect">#91bd3a</item>
+        <item name="buttoncolorincorrect">#AA1672</item>
+
+    </style>
+
+    <style name="AppTheme.Dark">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowActionBarOverlay">true</item>
+
+        <item name="colorPrimary">#14373D</item>
+
+        <item name="colorPrimaryDark">#0D2A2E</item>
+        <item name="backgroundcolor">#0D2A2E</item>
+
+        <item name="colorAccent">#525B56</item>
+
+        <item name="colorControlNormal">#C48146</item>
+        <item name="tintcolor">#C48146</item>
+        <item name="icontint">#C48146</item>
+
+
+        <item name="cardbackground">#14373D</item>
+        <item name="textcolor">#E0D1C8</item>
+        <item name="textcolortag">#F2A104</item>
+        <item name="hintcolor">#79706B</item>
+
+
+        <item name="buttoncolor">#525B56</item>
+        <item name="buttontextcolor">#E0D1C8</item>
+
+        <item name="buttoncolorselected">#ff7315</item>
+        <item name="buttoncolorcorrect">#91bd3a</item>
+        <item name="buttoncolorincorrect">#AA1639</item>
+    </style>
+
+    <style name="AppTheme.Sunset">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowActionBarOverlay">true</item>
+
+        <item name="colorPrimary">#5C4A72</item>
+
+        <item name="colorPrimaryDark">#A3586D</item>
+        <item name="backgroundcolor">#A3586D</item>
+
+        <item name="colorAccent">#F3B05A</item>
+
+        <item name="colorControlNormal">#F4874B</item>
+        <item name="tintcolor">#F4874B</item>
+        <item name="icontint">#F4874B</item>
+
+
+        <item name="cardbackground">#5C4A72</item>
+        <item name="textcolor">#E0D1C8</item>
+        <item name="textcolortag">#F2A104</item>
+        <item name="hintcolor">#293063</item>
+
+
+        <item name="buttoncolor">#F46A4E</item>
+        <item name="buttontextcolor">#E0D1C8</item>
+
+        <item name="buttoncolorselected">#5C4A72</item>
+        <item name="buttoncolorcorrect">#91bd3a</item>
+        <item name="buttoncolorincorrect">#AA1639</item>
+    </style>
+</resources>

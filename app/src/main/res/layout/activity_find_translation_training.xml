@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor">
+
+
+
+
+    <ImageView
+        android:scaleY="2"
+        android:scaleX="2"
+        android:padding="15sp"
+        android:id="@+id/imageViewShowTranscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/buttonAnswer1"
+        app:srcCompat="@drawable/ic_match" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:min="0"
+        android:progress="25"
+        android:max="100"
+        android:layout_margin="5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/progressBar"
+        android:layout_above="@id/imageViewShowTranscription"
+        >
+
+        <TextView
+            android:textColor="?attr/textcolor"
+            android:id="@+id/textViewWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textSize="25sp"
+            android:text="Слово" />
+
+        <TextView
+            android:textColor="?attr/textcolor"
+            android:id="@+id/textViewTranscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/textViewWord"
+            android:textSize="20sp"
+            android:text="[Слово]" />
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <Button
+        android:background="?attr/buttoncolor"
+        android:textColor="?attr/buttontextcolor"
+        android:id="@+id/buttonAnswer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonAnswer2"
+        android:layout_marginVertical="5sp"
+        android:maxHeight="50sp"
+        android:text="Ответ 1"/>
+
+    <Button
+        android:background="?attr/buttoncolor"
+        android:textColor="?attr/buttontextcolor"
+        android:id="@+id/buttonAnswer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonAnswer3"
+        android:maxHeight="50sp"
+        android:text="Ответ 2"/>
+
+    <Button
+        android:background="?attr/buttoncolor"
+        android:textColor="?attr/buttontextcolor"
+        android:id="@+id/buttonAnswer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="50sp"
+        android:layout_above="@id/buttonAnswer4"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:layout_marginVertical="5sp"
+        android:text="Ответ 3"/>
+    <Button
+        android:background="?attr/buttoncolor"
+        android:textColor="?attr/buttontextcolor"
+        android:id="@+id/buttonAnswer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="50sp"
+        android:layout_alignParentBottom="true"
+        android:text="Ответ 4"/>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayoutWordView"
+    android:layout_marginVertical="2sp"
+    android:background="@drawable/card_round">
+
+
+        <TextView
+            android:textColor="?attr/textcolor"
+            android:layout_marginStart="10dp"
+            android:id="@+id/textViewWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Word"
+            android:layout_toStartOf="@id/textViewWordTranscription"
+            android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:textColor="?attr/textcolor"
+        android:layout_marginStart="10dp"
+        android:id="@+id/textViewWordTranscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:maxWidth="200sp"
+        android:layout_alignParentEnd="true"
+        android:text="[Transcription                                              ]\n\n\n"/>
+
+    <TextView
+        android:textColor="?attr/textcolor"
+        android:layout_marginStart="10dp"
+        android:id="@+id/textViewWordTranslation"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/textViewWordTranscription"
+        android:layout_height="wrap_content"
+        android:text="Translation"
+        android:layout_below="@id/textViewWord"/>
+    <TextView
+        android:textColor="?attr/textcolortag"
+        android:layout_marginStart="10dp"
+        android:id="@+id/textViewWordTag"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/textViewWordTranscription"
+        android:layout_height="wrap_content"
+        android:text="#Tags"
+        android:layout_below="@id/textViewWordTranslation"/>
+    
+    <ProgressBar
+        android:layout_margin="2sp"
+        android:id="@+id/progressBarSmall"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_below="@id/textViewWordTranscription"
+        android:layout_toStartOf="@id/progressBarMedium"
+        android:min="0"
+        android:progress="5"
+        android:max="50"
+        android:layout_width="20sp"
+        android:layout_height="12sp"/>
+
+    <ProgressBar
+        android:layout_margin="2sp"
+        android:id="@+id/progressBarMedium"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_toStartOf="@id/progressBarHigh"
+        android:layout_below="@id/textViewWordTranscription"
+        android:min="50"
+        android:progress="5"
+        android:max="75"
+        android:layout_width="20sp"
+        android:layout_height="12sp"/>
+    
+    <ProgressBar
+        android:layout_margin="2sp"
+        android:id="@+id/progressBarHigh"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_below="@id/textViewWordTranscription"
+        android:layout_alignParentEnd="true"
+        android:min="75"
+        android:progress="5"
+        android:max="100"
+        android:layout_width="20sp"
+        android:layout_height="12sp"/>
+
+
+</RelativeLayout>
