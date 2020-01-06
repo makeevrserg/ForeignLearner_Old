@@ -104,6 +104,10 @@ public class ActivityFindTranslationTraining extends AppCompatActivity {
         }
 
 
+
+
+
+
         if (TRAINING_TYPE == 1)
             for (int i = 0; i < 4; ++i) {
                 buttonAnswer[i].setTextSize(20);
@@ -154,7 +158,7 @@ public class ActivityFindTranslationTraining extends AppCompatActivity {
                             String transcription = "";
                             if (isTranscriptionShowed) {
                                 if (!mOptions.mWordsToLearn.get(randCount[i]).transcription.isEmpty())
-                                    transcription = "[" + mOptions.mWordsToLearn.get(randCount[i]).transcription + "]";
+                                    transcription = "[" + mOptions.mWordsToLearn.get(randCount[i]).transcription.replace("[","").replace("]","") + "]";
                             }
                             buttonAnswer[i].setText(mOptions.mWordsToLearn.get(randCount[i]).word + transcription);
                         }
@@ -197,12 +201,12 @@ public class ActivityFindTranslationTraining extends AppCompatActivity {
         if (TRAINING_TYPE == 0)
             textViewWord.setText(correctWord.word);
         else if (TRAINING_TYPE == 1)
-            textViewWord.setText(correctWord.translation.toString());
+            textViewWord.setText(correctWord.translation.toString().replace("[","").replace("]",""));
 
 
         if (TRAINING_TYPE == 0) {
             if (!correctWord.transcription.isEmpty())
-                textViewWordTranscription.setText("[" + correctWord.transcription + "]");
+                textViewWordTranscription.setText("[" + correctWord.transcription.replace("[","").replace("]","") + "]");
             else
                 textViewWordTranscription.setText("");
 
@@ -242,12 +246,12 @@ public class ActivityFindTranslationTraining extends AppCompatActivity {
                 for (String str : mOptions.mWordsToLearn.get(randCount[i]).translation) {
                     translation = translation + str + "; ";
                 }
-                buttonAnswer[i].setText(translation);
+                buttonAnswer[i].setText(translation.replace("[","").replace("]",""));
             } else if (TRAINING_TYPE == 1) {
                 String transcription = "";
                 if (isTranscriptionShowed) {
                     if (!mOptions.mWordsToLearn.get(randCount[i]).transcription.isEmpty())
-                        transcription = "[" + mOptions.mWordsToLearn.get(randCount[i]).transcription + "]";
+                        transcription = "[" + mOptions.mWordsToLearn.get(randCount[i]).transcription.replace("[","").replace("]","") + "]";
                 }
                 buttonAnswer[i].setText(mOptions.mWordsToLearn.get(randCount[i]).word + transcription);
             }

@@ -127,7 +127,7 @@ public class ActivityMatchWords extends AppCompatActivity{
                         buttonsWords[i].setText(mWords.get(i));
                 } else {
                     for(int i =0;i<sizeOfStage;++i){
-                        String tr = mTranscription.get(i);
+                        String tr = mTranscription.get(i).replace("[","").replace("]","");
                         if (!tr.isEmpty())
                             tr="\n"+"["+tr+"]";
                         buttonsWords[i].setText(mWords.get(i)+tr);
@@ -155,8 +155,8 @@ public class ActivityMatchWords extends AppCompatActivity{
             isLeftClickable[i] = true;
             isRightClickable[i] = true;
             mWords.add(wordStages.get(currentStage).get(i).word);
-            mTranscription.add(wordStages.get(currentStage).get(i).transcription);
-            mTranslation.add(wordStages.get(currentStage).get(i).translation.toString());
+            mTranscription.add(wordStages.get(currentStage).get(i).transcription.replace("[","").replace("]",""));
+            mTranslation.add(wordStages.get(currentStage).get(i).translation.toString().replace("[","").replace("]",""));
 
         }
         Log.d(TAG, "wordPosition= "+ Arrays.toString(wordPosition));
@@ -172,7 +172,7 @@ public class ActivityMatchWords extends AppCompatActivity{
 
         for(int i =0;i<sizeOfStage;++i){
             if (isTranscriptionShowed)
-                CreateButton(linearLayoutWords,buttonsWords[i],mWords.get(i),mTranscription.get(i));
+                CreateButton(linearLayoutWords,buttonsWords[i],mWords.get(i),mTranscription.get(i).replace("[","").replace("]",""));
             else
                 CreateButton(linearLayoutWords,buttonsWords[i],mWords.get(i),"");
 
@@ -194,7 +194,7 @@ public class ActivityMatchWords extends AppCompatActivity{
             });
         }
         for(int i =0;i<sizeOfStage;++i){
-            buttonsTrasnaltion[wordPosition[i]].setText(mTranslation.get(i));
+            buttonsTrasnaltion[wordPosition[i]].setText(mTranslation.get(i).replace("[","").replace("]",""));
         }
     }
 
