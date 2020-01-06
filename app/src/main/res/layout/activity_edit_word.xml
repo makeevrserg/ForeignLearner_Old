@@ -17,7 +17,7 @@
         android:layout_alignParentStart="true"
         android:onClick="onClickCloseEditor"/>
     <Button
-        android:background="?attr/buttoncolor"
+        android:background="@drawable/buttton_round"
         android:textColor="?attr/buttontextcolor"
         android:id="@+id/buttonChangeWord"
         android:layout_width="wrap_content"
@@ -108,7 +108,7 @@
                 android:textSize="20sp"/>
 
             <ImageButton
-                android:background="?attr/buttoncolor"
+                android:background="@drawable/buttton_round"
                 android:layout_marginTop="5sp"
                 android:id="@+id/imageButtonTagSelect_word_edit"
                 android:layout_width="wrap_content"

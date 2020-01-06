@@ -82,7 +82,7 @@
         <ImageButton
             android:layout_alignTop="@id/recyclerViewTagsSelected"
             android:layout_alignBottom="@id/recyclerViewTagsSelected"
-            android:background="?attr/cardbackground"
+            android:background="@drawable/card_round"
             android:textColor="?attr/buttontextcolor"
             android:layout_marginTop="5sp"
             android:id="@+id/imageButtonTagSelect"
