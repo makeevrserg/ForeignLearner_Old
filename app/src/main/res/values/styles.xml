@@ -97,4 +97,63 @@
         <item name="buttoncolorcorrect">#91bd3a</item>
         <item name="buttoncolorincorrect">#AA1639</item>
     </style>
+
+    <style name="AppTheme.GreenDark">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowActionBarOverlay">true</item>
+
+        <item name="colorPrimary">#4d4646</item>
+
+        <item name="cardbackground">#4D4747</item>
+
+        <item name="colorPrimaryDark">#5b5656</item>
+        <item name="backgroundcolor">#5b5656</item>
+
+        <item name="colorAccent">#7fcd91</item>
+        <item name="colorControlNormal">#7fcd91</item>
+        <item name="tintcolor">#7fcd91</item>
+        <item name="icontint">#7fcd91</item>
+        <item name="buttoncolor">#7fcd91</item>
+
+        <item name="textcolortag">#F2A104</item>
+        <item name="hintcolor">#A8A8A8</item>
+
+
+        <item name="buttontextcolor">#f5eaea</item>
+        <item name="textcolor">#f5eaea</item>
+
+        <item name="buttoncolorselected">#5C4A72</item>
+        <item name="buttoncolorcorrect">#91bd3a</item>
+        <item name="buttoncolorincorrect">#AA1639</item>
+    </style>
+    <style name="AppTheme.DarkCyan">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowActionBarOverlay">true</item>
+
+        <item name="colorPrimary">#222831</item>
+
+        <item name="cardbackground">#393e46</item>
+
+        <item name="colorPrimaryDark">#353941</item>
+        <item name="backgroundcolor">#353941</item>
+
+        <item name="colorAccent">#0091B5</item>
+        <item name="colorControlNormal">#0091B5</item>
+        <item name="tintcolor">#0091B5</item>
+        <item name="icontint">#0091B5</item>
+        <item name="buttoncolor">#0091B5</item>
+
+        <item name="textcolortag">#F2A104</item>
+        <item name="hintcolor">#A8A8A8</item>
+
+
+        <item name="buttontextcolor">#f5eaea</item>
+        <item name="textcolor">#f5eaea</item>
+
+        <item name="buttoncolorselected">#5C4A72</item>
+        <item name="buttoncolorcorrect">#91bd3a</item>
+        <item name="buttoncolorincorrect">#AA1639</item>
+    </style>
 </resources>

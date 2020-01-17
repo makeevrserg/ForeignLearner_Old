@@ -4,5 +4,7 @@
         <item>Standart</item>
         <item>Dark</item>
         <item>Sunset</item>
+        <item>DarkGreen</item>
+        <item>DarkCyan</item>
     </string-array>
 </resources>

@@ -56,6 +56,12 @@ public class ThemeSettings {
             case 2:
                 fragmentActivity.setTheme(R.style.AppTheme_Sunset);
                 break;
+            case 3:
+                fragmentActivity.setTheme(R.style.AppTheme_GreenDark);
+                break;
+            case 4:
+                fragmentActivity.setTheme(R.style.AppTheme_DarkCyan);
+                break;
         }
     }
     public void SaveTheme(int i){
