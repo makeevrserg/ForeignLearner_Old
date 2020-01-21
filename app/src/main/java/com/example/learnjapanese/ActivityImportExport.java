@@ -141,7 +141,6 @@ public class ActivityImportExport extends AppCompatActivity {
 
                 XSSFSheet myExcelSheet = workbook.getSheet(LANGUAGE);
                 final int rows = myExcelSheet.getPhysicalNumberOfRows();
-                Log.d(TAG, "run: Rows=" + rows);
                 for (int i = 2; i < rows; ++i) {
                     final int finalI = i;
                     runOnUiThread(new Runnable() {

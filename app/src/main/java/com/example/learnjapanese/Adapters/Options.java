@@ -195,7 +195,6 @@ public class Options {
         editor.putBoolean("boolInfRepeat",boolInfRepeat);
         editor.putString("stringFirstToShow",stringFirstToShow);
         editor.putBoolean("boolShowLearnedWords",boolShowLearnedWords);
-        Log.d(TAG, "SaveJsonSettings: SaveCountWords="+countSelectedWods);
         editor.putInt(SELECTED_LANGUAGE==ENGLISH?"countSelectedWords_ENGLISH":"countSelectedWords_JAPANESE",countSelectedWods);
         editor.putInt("showWordsMatchWordsCount",showWordsMatchWordsCount);
         JSONArray jsonArrayBoolTag= new JSONArray();
@@ -265,7 +264,6 @@ public class Options {
             }
         }
         ArrayStringOfAllTags = new String[ListOfAllTags.size()];
-        Log.d(TAG, "LoadWordsFromMySqlite: "+ Arrays.toString(ArrayStringOfAllTags));
         for(int i =0;i<ListOfAllTags.size();++i)
             ArrayStringOfAllTags[i]=ListOfAllTags.get(i);
         Arrays.sort(ArrayStringOfAllTags);

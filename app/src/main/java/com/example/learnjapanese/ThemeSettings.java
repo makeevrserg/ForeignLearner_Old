@@ -28,16 +28,6 @@ public class ThemeSettings {
         this.fragmentActivity = fragmentActivity;
         LoadTheme();
     }
-    public void setPopupToolbarTheme(Toolbar toolbar){
-        switch (CHOOSED_THEME_SETTING) {
-            case 0:
-                //toolbar.setPopupTheme(R.style.AppTheme_SliderActivityTheme);
-                break;
-            case 1:
-                //toolbar.setPopupTheme(R.style.GreenTheme);
-                break;
-        }
-    }
     public void LoadTheme(){
         sharedPreferences = Objects.requireNonNull(this.fragmentActivity).getSharedPreferences(THEME_SETTING, Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();

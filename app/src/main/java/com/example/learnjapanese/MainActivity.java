@@ -58,10 +58,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-//        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
-//                R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-
         final LinearLayout holder=findViewById(R.id.linearLayoutMainActivity);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -95,18 +91,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
 
         if (savedInstanceState == null) {
-
-            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-            if (firebaseAuth.getCurrentUser()!=null){
-                toolbar.setTitle("Ваша страница");
-                fragmentManager = getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.fragment_container,
-                        new FragmentUserPage()).commit();
-            }else {
-                fragmentManager = getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.fragment_container,
-                        new FragmentLogin()).commit();
-            }
+            fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.fragment_container,
+                    new FragmentLearnWords()).commit();
+//            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+//            if (firebaseAuth.getCurrentUser()!=null){
+//                toolbar.setTitle("Ваша страница");
+//                fragmentManager = getSupportFragmentManager();
+//                fragmentManager.beginTransaction().replace(R.id.fragment_container,
+//                        new FragmentUserPage()).commit();
+//            }else {
+//                fragmentManager = getSupportFragmentManager();
+//                fragmentManager.beginTransaction().replace(R.id.fragment_container,
+//                        new FragmentLogin()).commit();
+//            }
         }
 
         CheckPermissionStorage();
@@ -120,7 +118,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (ContextCompat.checkSelfPermission(Objects.requireNonNull(this),
                 Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED){
             IS_STORAGE_GRANTED=true;
-            //Toast.makeText(this, "You have permission", Toast.LENGTH_SHORT).show();
         }
         else{
             new AlertDialog.Builder(this)
@@ -135,9 +132,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     .create().show();
         }
     }
-
-
-
     private void requestStoragePermission(){
         if (ActivityCompat.shouldShowRequestPermissionRationale((this),
                 Manifest.permission.READ_EXTERNAL_STORAGE)){
@@ -190,10 +184,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
 
         switch (item.getItemId()) {
-            case R.id.nav_contacts:
-                toolbar.setTitle("Contacts");
-                selectedFragment = new FragmentContacts();
-                break;
+//            case R.id.nav_contacts:
+//                toolbar.setTitle("Contacts");
+//                selectedFragment = new FragmentContacts();
+//                break;
             case R.id.nav_startlearning_japanese:
                 toolbar.setTitle("Japanese");
                 SetLanguage(JAPANESE);
@@ -204,16 +198,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 SetLanguage(ENGLISH);
                 selectedFragment = new FragmentLearnWords();
                 break;
-            case R.id.nav_login:
-                if (firebaseAuth.getCurrentUser()!=null){
-                    toolbar.setTitle("Ваша страница");
-                    selectedFragment = new FragmentUserPage();
-                    break;
-                }else {
-                    toolbar.setTitle("Login");
-                    selectedFragment = new FragmentLogin();
-                    break;
-                }
+//            case R.id.nav_login:
+//                if (firebaseAuth.getCurrentUser()!=null){
+//                    toolbar.setTitle("Ваша страница");
+//                    selectedFragment = new FragmentUserPage();
+//                    break;
+//                }else {
+//                    toolbar.setTitle("Login");
+//                    selectedFragment = new FragmentLogin();
+//                    break;
+//                }
             case R.id.nav_settings:
                 toolbar.setTitle("Settings");
                 selectedFragment=new FragmentSettings();
